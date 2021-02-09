@@ -1,0 +1,445 @@
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+ 
+a
+	text-decoration-line: none
+
+
+.container
+	max-width: 1220px 
+	padding: 0 10px  
+	margin: 0 auto      
+
+body
+	font-family: 'Roboto', 'FiraSans', sans-serif
+	color: #1b1818
+	line-height: 19px
+	font-size: 16px
+
+.application_btn
+	margin: 0 auto
+	margin-top: 63px
+	padding: 16px 19px 15px 18px
+	background-color: #c5ac2d
+	color: #fefefe
+	font-weight: 400
+	text-align: center
+	text-transform: uppercase
+	border: 1px solid transparent
+	transition: 0.5s all
+	&:hover
+		background-color:#fefefe
+		color: #c5ac2d
+		border: 1px solid #c5ac2d
+
+.menu
+	&_list
+		display: flex
+		flex-direction: row
+		.menu_item
+			margin-right: 30px
+			.menu_list_link
+				color: #ffffff
+				font-size: 18px
+				line-height: 21px
+				font-weight: 400
+				text-align: left
+				text-transform: uppercase
+				padding-bottom: 4px
+				transition: 0.5s all
+				border-bottom: 1px solid transparent
+				&:hover
+					border-bottom: 1px solid #fefefe
+			&:last-child
+				margin-right: 0px
+
+.phone
+	color: #fefefe
+	font-size: 18px
+	font-weight: 400
+	text-align: left          
+
+
+.header
+	min-height: 100px
+	background-color: #332208
+	
+	&_inner
+		padding: 26px 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.menu_btn
+			display: none
+		
+.top   
+	&_inner
+		display: flex
+		.top_left
+			width: 50%
+			padding-top: 141px
+			padding-bottom: 100px
+			display: flex
+			flex-direction: column
+			.top_title
+				margin: 0 auto
+				font-family: 'FiraSans'
+				font-size: 48px
+				line-height: 58px
+				font-weight: 500
+				text-align: center
+				max-width: 455px
+			.top_text
+				margin: 0 auto
+				margin-top: 21px
+				font-size: 24px
+				line-height: 28px
+				font-weight: 400
+				text-align: center
+				max-width: 470px
+			.top_items
+				margin-top: 104px
+				display: flex
+				.top_item
+					padding: 10px
+					margin-right: 50px
+					width: 150px
+					height: 150px
+					display: flex
+					flex-direction: column
+					justify-content: space-around
+					align-items: center
+					box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+					border: 1px solid #332208
+					background-color: rgba(196, 196, 196, 0)
+					cursor: pointer
+					transition: 0.5s all
+					&:hover
+						transform: scale(1.25)
+					&_text
+						font-size: 16px
+						font-weight: 400
+						text-align: center
+						width: 90%
+					&:last-child
+						margin-right: 0px
+		.top_right
+			padding: 52px 0 100px 0
+			width: 50%
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			.top_slider
+				position: relative
+				.slick-dots
+					list-style: none
+					text-align: center
+					position: absolute
+					right: 0
+					top: 50%
+					transform: translateY(-50%)
+					button
+						background-color: #332208
+						font-size: 0
+						width: 8px
+						height: 8px
+						border: none
+						border-radius: 50%
+						padding: 0
+						margin-top: 10px
+				.slick-active
+					button
+						width: 16px
+						height: 16px
+				&_text
+					font-family: "FiraSans"
+					font-weight: 500
+					text-align: right
+					padding-right: 108px
+					span
+						margin-right: 14px
+						&:last-child
+							margin-right: 0px
+			.top_link
+				width: 100%
+				display: flex
+				justify-content: center
+				&_rent
+					margin-right: 16px
+					margin-left: 88px
+				a
+					color: #1b1818
+					font-weight: 400
+					text-align: center
+					border-bottom: 1px solid transparent
+					padding-bottom: 4px
+					transition: 0.5s all
+					&:hover
+						border-bottom: 1px solid #1b1818
+
+.rent
+	min-height: 550px
+	padding: 100px 0
+	&_inner
+		display: flex
+		justify-content: space-between   
+		.rent_content
+			width: 300px
+			height: 350px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			.rent_title
+				font-family: 'FiraSans'
+				font-size: 24px
+				font-weight: 500
+				text-align: left
+				line-height: 28.8px
+			.rent_text
+				font-size: 16px
+				font-weight: 400
+				text-align: left
+				&_bottom
+					margin-top: 20px
+			.application_btn
+				display: inline-block
+				margin: 0 auto
+				margin-left: 0px
+		.rent_item
+			padding: 0 38px 25px
+			width: 250px
+			height: 350px
+			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+			border: 1px solid #332208
+			background-color: rgba(115, 106, 106, 0)
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			align-items: center
+			&_num
+				opacity: 0.05
+				font-family: 'FiraSans'
+				font-size: 96px
+				font-weight: 500
+				text-align: center
+				line-height: 115.2px
+			&_title
+				font-family: 'FiraSans'
+				font-size: 18px
+				font-weight: 500
+				text-align: center
+			&_text
+				font-size: 16px
+				font-weight: 400
+				text-align: center
+
+.benefits
+	min-height: 650px
+	padding: 100px 0
+	&_title
+		font-family: 'FiraSans'
+		font-size: 24px
+		font-weight: 500
+		font-style: normal
+		letter-spacing: normal
+		line-height: normal
+		text-align: left
+	&_inner
+		margin-top: 48px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.benefits_list
+			list-style: none
+			width: 300px
+			&_item
+				font-size: 16px
+				font-weight: 400
+				margin-top: 27px
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					width: 16px
+					height: 16px
+					margin-left: 14px
+					background-color: #332208
+					border-radius: 50%
+				&:nth-child(1)
+					margin-top: 0px
+					padding-left: 66px
+				&:nth-child(2)
+					padding-left: 63px
+				&:nth-child(3)
+					padding-left: 25px
+				&:nth-child(5)
+					padding-left: 25px
+				&:nth-child(6)
+					padding-left: 32px
+				&:nth-child(7)
+					padding-left: 53px
+		.benefits_discr
+			width: 300px
+			height: 283px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			.benefits_text
+				text-align: right
+				&:nth-child(2)
+					width: 267px
+					margin-left: auto
+			.video_popap
+				padding: 6px 34px 6px 64px
+				margin-left: auto
+				background-color: #c5ac2d
+				color: #fefefe
+				font-size: 16px
+				font-weight: 400
+				text-align: center
+				text-transform: uppercase
+				position: relative
+				cursor: pointer
+				&:after
+					content: ''
+					position: absolute
+					left: 34px
+					bottom: 13px
+					width: 25px
+					height: 25px
+					line-height: 19px
+					background-image: url(../img/icon/video_btn.svg)
+				
+.reviews
+	min-height: 650px
+	background-color: #332208
+	padding: 100px 0
+	&_title
+		color: #fefefe
+		font-family: 'FiraSans'
+		font-size: 24px
+		font-weight: 500
+		text-align: left
+	&_slider
+		position: relative
+		.slick-dots
+			display: flex
+			list-style: none
+			text-align: center
+			position: absolute
+			bottom: -39px
+			right: 50%
+			transform: translateX(50%)
+			button
+				background-color: #c5ac2d
+				font-size: 0
+				width: 8px
+				height: 8px
+				border: none
+				border-radius: 50%
+				padding: 0
+				margin-right: 10px
+		.slick-active
+			button
+				width: 16px
+				height: 16px
+		.reviews_items
+			margin-top: 70px
+			display: flex
+			justify-content: space-between
+			.reviews_item
+				padding: 45px 30px
+				width: 270px
+				min-height: 300px
+				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+				border: 1px solid #c5ac2d
+				background-color: #332208
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				.slider_item_title
+					color: #fefefe
+					font-family: 'FiraSans'
+					font-size: 24px
+					font-weight: 500
+					text-align: center
+				.slider_item_text
+					color: #fefefe
+					text-align: center
+					line-height: 19px
+
+.feedback
+	padding: 100px 0
+	&_inner
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.feedback_img
+			width: 50%
+		.feedback_form
+			width: 416px
+			margin: 0 auto
+			.feedback_title
+				font-family: 'FiraSans'
+				font-size: 24px
+				font-weight: 500
+				text-align: left
+			.feedback_text
+				margin-top: 8px
+				text-align: left
+			.feedback_input
+				margin-top: 30px
+				display: block
+				padding: 20px 0
+				width: 100%
+				border: none
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+				&::placeholder
+					font-family: 'Roboto'
+					font-size: 16px
+					line-height: 19px
+					color: #1b1818
+			.feedback_btn
+				margin-top: 50px
+				text-transform: uppercase
+				color: #fefefe
+				border: none
+				display: inline-block
+				padding: 16px 36px
+				background-color: #c5ac2d
+				font-family: 'Roboto'
+				font-size: 16px
+				line-height: 19px
+				cursor: pointer
+				border: 1px solid transparent
+				transition: 0.5s all
+				&:hover
+					background-color:#fefefe
+					color: #c5ac2d
+					border: 1px solid #c5ac2d
+
+.footer
+	background-color: #332208
+	height: 200px	
+	padding-top: 75px
+	padding-bottom: 24px
+	&_top
+		display: flex
+		justify-content: space-between	
+		align-items: center
+		.application_btn
+			margin: 0
+	&_social
+		list-style-type: none
+		display: flex
+		justify-content: center
+		margin-top: 21px
+		&_item
+			margin: 0 15px
+	
+
+						
+@import 'media'						
+
